@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+body {
+  font-family:'Avenir','Helvetica, Neue','Helvetica','Arial';
+}
+
+/* ラッパー */
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background: pink; */
+  background-image: url(nightsky.jpg);
+}
+/* ヘッダー */
+header{
+  /* background: red; */
+  background-image: url(lovejoy_.jpg);
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+}
+/* ナビメニュー */
+/* .nav{
+  height: 100px;
+  background: blue;
+} */
+#nav{
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  padding: 0;
+  background: #555555;
+  list-style: none;
+  display: flex;
+}
+#nav li{
+  /* border-left: 1px solid #FFFFFF; */
+  margin: auto;
+  text-align: center;
+  width: 25%;
+}
+#nav li+li{
+  border-left: 1px solid #FFFFFF;
+}
+#navnav{
+  /* background: coral; */
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/* メイン＋サイド */
+.container{
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+/* メイン */
+.main{
+  background: rgba(255, 192, 203, 0.637);
+  width: 70%;
+  display: flex;
+}
+.mainmain{
+  background:blanchedalmond;
+  width: 90%;
+  margin: 60px;
+}
+.mainhello{
+  text-align: center;
+  background: blue;
+}
+.main_container{
+  display: flex;
+  height: 300px;
+}
+.main_container img{
+  margin: auto;
+  width: 50%;
+}
+.main_container ul{
+  margin: auto;
+  width: 50%;
+}
+.main_container ul li{
+  font-size: 20px;
+}
+/* モーダルウィンドウ*/
+#open {
+  cursor: pointer;
+}
+#close {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal p {
+  margin: 0 0 20px;
+}
+#mask.hidden {
+  display: none;
+}
+#modal.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル終わり */
+/* モーダルウィンドウ2*/
+#open2 {
+  cursor: pointer;
+}
+#close2 {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask2 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal2 {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal2 p {
+  margin: 0 0 20px;
+}
+#mask2.hidden {
+  display: none;
+}
+#modal2.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル2終わり */
+/* モーダルウィンドウ3*/
+#open3 {
+  cursor: pointer;
+}
+#close3 {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask3 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal3 {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal3 p {
+  margin: 0 0 20px;
+}
+#mask3.hidden {
+  display: none;
+}
+#modal3.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル3終わり */
+/* モーダルウィンドウ4*/
+#open4 {
+  cursor: pointer;
+}
+#close4 {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask4 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal4 {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal4 p {
+  margin: 0 0 20px;
+}
+#mask4.hidden {
+  display: none;
+}
+#modal4.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル4終わり */
+/* モーダルウィンドウ5*/
+#open5 {
+  cursor: pointer;
+}
+#close5 {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask5 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal5 {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal5 p {
+  margin: 0 0 20px;
+}
+#mask5.hidden {
+  display: none;
+}
+#modal5.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル5終わり */
+/* モーダルウィンドウ6*/
+#open6 {
+  cursor: pointer;
+}
+#close6 {
+  background: blueviolet;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+}
+#mask6 {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+#modal6 {
+  text-align: center;
+  background: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+#modal6 p {
+  margin: 0 0 20px;
+}
+#mask6.hidden {
+  display: none;
+}
+#modal6.hidden {
+  transform: translate(0, -500px);
+}
+/* モーダル6終わり */
+
+
+/* サイド */
+.side{
+  background:rgba(255, 192, 203, 0.637);
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidecontent{
+  width: 80%;
+  background: burlywood;
+}
+.sidecontenth1{
+  height: 22px;
+  background: blue;
+  text-align: center;
+  margin: 0 auto;
+}
+.sidecontent ul{
+height: 300px;
+margin: 0 auto;
+padding-top: 20px;
+}
+
+/* フッター */
+footer{
+  color: #5d7fb9;
+  background: black;
+}
+footer img{
+  width: 70px;
+  height: 70px;
+  margin: 0px 0px 0px 10px;
+}
+footer p {
+  padding:0px 0px 10px 10px ;
+  margin: 0;
+}
